@@ -1,0 +1,11 @@
+services:
+  crawler:
+    image: python:3.7-slim
+    volumes:
+      - ./.:/usr/src/app
+    working_dir: /usr/src/app
+    command: bash -c "
+        python -m pip install --upgrade pip &&
+        pip install -r requirements.txt &&
+        python src/selenium-remote-standalone-chrome/script_1.py
+      "
