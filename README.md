@@ -6,7 +6,7 @@ Crawl facebook groups posts.
 
 - Git clone repo 
 
-- Run selenium grid server
+- Activate selenium grid server
 
 ```
 docker-compose -f docker-compose-standalone-chrome.yml up -d
