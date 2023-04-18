@@ -1,31 +1,44 @@
-# Crawl-facebook-posts
+# Crawl-Facebook-Posts
 
 Crawl facebook groups posts.
 
 ## Getting Started
 
-Clone repo from Github and active selenium grid server.
+- Git clone repo 
+
+- Run selenium grid server
+
 ```
-git clone https://github.com/51st-F/crawl-facebook-posts.git &&
-cd crawl-facebook-posts &&
 docker-compose -f docker-compose-standalone-chrome.yml up -d
 ```
 
-Active crawler
+- Crawler can be restarted repeatedly
+
 ```
 docker-compose -f docker-compose-crawler.yml up -d
 ```
 
+## Linux Tree
 
-### Prerequisites
+- Build some empty file marked * to meet coding conventions required.
 
-* [Docker-desktop](https://www.docker.com/products/docker-desktop/)
-
-## Authors
-
-* [Ivan Wu](https://github.com/51st-F) - *Initial work* 
-## Acknowledgments
-
-* Those articles I search from Google
-* Those videos I search from Youtube
-* etc
+```
+├── demo.csv
+├── docker-compose-crawler.yml
+├── docker-compose-standalone-chrome.yml
+├── * docs
+│   ├── * some_document.doc
+│   └── * some_manual.pdf
+├── README.md
+├── requirements.txt
+├── src
+│   └── selenium-remote-standalone-chrome
+│       └── script_1.py
+└── * tests
+    ├── * test_name_1
+    │   ├── * README.md
+    │   └── * test_1.py
+    └── * test_name_2
+        ├── * README.md
+        └── * test_1.py
+```
