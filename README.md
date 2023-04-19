@@ -9,13 +9,13 @@ Crawl facebook groups posts.
 - Activate selenium grid server
 
 ```
-docker-compose -f docker-compose-standalone-chrome.yml up -d
+$ docker-compose -f docker-compose-standalone-chrome.yml up -d
 ```
 
 - Crawler can be restarted repeatedly
 
 ```
-docker-compose -f docker-compose-crawler.yml up -d
+$ docker-compose -f docker-compose-crawler.yml up -d
 ```
 
 ## Linux Tree
@@ -23,6 +23,7 @@ docker-compose -f docker-compose-crawler.yml up -d
 - Build some empty file marked * to meet coding conventions required.
 
 ```
+.
 ├── demo.csv
 ├── docker-compose-crawler.yml
 ├── docker-compose-standalone-chrome.yml
